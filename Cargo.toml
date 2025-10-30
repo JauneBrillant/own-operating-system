@@ -8,9 +8,9 @@ default-run = "saba"
 
 [features]
 default = ["wasabi"]
-wasabi = ["dep:net_wasabi", "dep:noli"] #3
+wasabi = ["dep:net_wasabi", "dep:noli"]
 
-[[bin]] #4
+[[bin]]
 name = "saba"
 path = "src/main.rs"
 required-features = ["wasabi"]

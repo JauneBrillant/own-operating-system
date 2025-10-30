@@ -57,7 +57,7 @@ impl HttpClient {
 
         let mut received = Vec::new();
         loop {
-            let mut buf = [0u8; 4096];
+            let mut buf = [0_u8; 4096];
             let bytes_read = match stream.read(&mut buf) {
                 Ok(bytes) => bytes,
                 Err(_) => {
